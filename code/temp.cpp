@@ -1,13 +1,17 @@
 #include <iostream>
+//#define _WIN32_WINNT_WIN10 0x0A00
+//#define _WIN32_WINNT 0x502
 #include <ws2tcpip.h>
-// #include <winsock2.h>
+#include <winsock2.h>
+
+// g++ temp.cpp -o test.exe -lwsock32 -lWs2_32
 
 
 
 #pragma comment(lib, "ws2_32.lib")
 // #define _WIN32_WINNT 0x0501
 // #define _WIN32_WINNT 0x501
-#define _WIN32_WINNT 0x0501
+// #define _WIN32_WINNT 0x0501
 using namespace std;
 
 int main(){
